@@ -360,7 +360,7 @@ Public Class MainBotForm
             Dim NewsBuilder As New System.Text.StringBuilder
             Dim NewsFeed As XDocument = XDocument.Load(xmlUrl)
             For Each Element As XElement In NewsFeed...<root>...<newsfeed>...<news>
-                NewsBuilder.Append("•" & Element.Value & vbCrLf & vbCrLf)
+                NewsBuilder.Append("Â•" & Element.Value & vbCrLf & vbCrLf)
             Next
             Return NewsBuilder.ToString
         Catch ex As Exception
